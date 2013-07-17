@@ -10,3 +10,7 @@ else
 fi
 
 openssl x509 -noout -in $file -text
+echo "fingerprint:"
+openssl x509 -noout -in $file -fingerprint
+echo "hash:"
+openssl x509 -noout -in $file -hash
